@@ -180,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  d_bulk_data-&gt;get_entity( </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="classDataTransferKit_1_1STKMeshHelpers.html#a26b3cbb6fab8d3b897453f212e108a37">STKMeshHelpers::getRankFromType</a>(entity_type,<a class="code" href="classDataTransferKit_1_1STKMeshEntitySet.html#a6b5343347ba82a2396fff9b23103c77f">physicalDimension</a>()), </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      entity_id );</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    entity = STKMeshEntity( stk_entity, d_bulk_data.ptr() );</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    entity = <a class="code" href="classDataTransferKit_1_1STKMeshEntity.html">STKMeshEntity</a>( stk_entity, d_bulk_data.ptr() );</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
@@ -219,7 +219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    entity_it != adjacent_entities.end();</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    ++entity_it, ++stk_it )</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  *entity_it = STKMeshEntity( *stk_it, d_bulk_data.ptr() );</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  *entity_it = <a class="code" href="classDataTransferKit_1_1STKMeshEntity.html">STKMeshEntity</a>( *stk_it, d_bulk_data.ptr() );</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
@@ -241,6 +241,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classDataTransferKit_1_1Entity_html"><div class="ttname"><a href="classDataTransferKit_1_1Entity.html">DataTransferKit::Entity</a></div><div class="ttdoc">Geometric entity interface definition. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__Entity_8hpp_source.html#l00062">DTK_Entity.hpp:62</a></div></div>
 <div class="ttc" id="classDataTransferKit_1_1STKMeshEntitySet_html_a6ca2079be3fa125db7d888cb860b932a"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntitySet.html#a6ca2079be3fa125db7d888cb860b932a">DataTransferKit::STKMeshEntitySet::entityIterator</a></div><div class="ttdeci">EntityIterator entityIterator(const EntityType entity_type, const std::function&lt; bool(Entity)&gt; &amp;predicate) const </div><div class="ttdoc">Get a iterator of the given entity type that satisfy the given predicate. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntitySet_8cpp_source.html#l00102">DTK_STKMeshEntitySet.cpp:102</a></div></div>
 <div class="ttc" id="classDataTransferKit_1_1STKMeshEntitySet_html_aff4e99acfa010944d0155b73a77e83ab"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntitySet.html#aff4e99acfa010944d0155b73a77e83ab">DataTransferKit::STKMeshEntitySet::getEntity</a></div><div class="ttdeci">void getEntity(const EntityType entity_type, const EntityId entity_id, Entity &amp;entity) const </div><div class="ttdoc">Entity access functions. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntitySet_8cpp_source.html#l00088">DTK_STKMeshEntitySet.cpp:88</a></div></div>
+<div class="ttc" id="classDataTransferKit_1_1STKMeshEntity_html"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntity.html">DataTransferKit::STKMeshEntity</a></div><div class="ttdoc">STKMesh entity interface definition. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntity_8hpp_source.html#l00063">DTK_STKMeshEntity.hpp:63</a></div></div>
 <div class="ttc" id="classDataTransferKit_1_1STKMeshEntityIteratorRange_html"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntityIteratorRange.html">DataTransferKit::STKMeshEntityIteratorRange</a></div><div class="ttdoc">A container for entity vectors that can be reference-counted. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntityIteratorRange_8hpp_source.html#l00056">DTK_STKMeshEntityIteratorRange.hpp:56</a></div></div>
 <div class="ttc" id="classDataTransferKit_1_1STKMeshHelpers_html_a26b3cbb6fab8d3b897453f212e108a37"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshHelpers.html#a26b3cbb6fab8d3b897453f212e108a37">DataTransferKit::STKMeshHelpers::getRankFromType</a></div><div class="ttdeci">static stk::mesh::EntityRank getRankFromType(const EntityType dtk_type, const int space_dim)</div><div class="ttdoc">Given a DTK EntityType, get the STK entity rank. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshHelpers_8cpp_source.html#l00062">DTK_STKMeshHelpers.cpp:62</a></div></div>
 <div class="ttc" id="classDataTransferKit_1_1STKMeshEntitySet_html_a430a4de5509d04ca2a4b0bd8390895ad"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntitySet.html#a430a4de5509d04ca2a4b0bd8390895ad">DataTransferKit::STKMeshEntitySet::getAdjacentEntities</a></div><div class="ttdeci">void getAdjacentEntities(const Entity &amp;entity, const EntityType entity_type, Teuchos::Array&lt; Entity &gt; &amp;adjacent_entities) const </div><div class="ttdoc">Given an entity, get the entities of the given type that are adjacent to it. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntitySet_8cpp_source.html#l00116">DTK_STKMeshEntitySet.cpp:116</a></div></div>
@@ -257,7 +258,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 3 2014 13:38:54 for DataTransferKit - Multiphysics Solution Transfer Services by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 3 2014 13:50:53 for DataTransferKit - Multiphysics Solution Transfer Services by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

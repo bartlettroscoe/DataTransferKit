@@ -133,17 +133,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Constructor.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;STKMeshEntity::STKMeshEntity( </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classDataTransferKit_1_1STKMeshEntity.html#a051d8250759c218dbf386d9eb7e9838f">   49</a></span>&#160;<a class="code" href="classDataTransferKit_1_1STKMeshEntity.html#a051d8250759c218dbf386d9eb7e9838f">STKMeshEntity::STKMeshEntity</a>( </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">const</span> stk::mesh::Entity&amp; stk_entity,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> Teuchos::Ptr&lt;stk::mesh::BulkData&gt;&amp; bulk_data )</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    this-&gt;b_entity_impl = </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Teuchos::rcp( <span class="keyword">new</span> STKMeshEntityImpl(stk_entity,bulk_data) );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Teuchos::rcp( <span class="keyword">new</span> <a class="code" href="classDataTransferKit_1_1STKMeshEntityImpl.html">STKMeshEntityImpl</a>(stk_entity,bulk_data) );</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//brief Destructor.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;STKMeshEntity::~STKMeshEntity()</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classDataTransferKit_1_1STKMeshEntity.html#a6394abacbd3340d12415cbef410a1c84">   59</a></span>&#160;<a class="code" href="classDataTransferKit_1_1STKMeshEntity.html#a6394abacbd3340d12415cbef410a1c84">STKMeshEntity::~STKMeshEntity</a>()</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{ <span class="comment">/* ... */</span> }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
@@ -153,11 +153,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// end DTK_Entity.cpp</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//---------------------------------------------------------------------------//</span></div>
+<div class="ttc" id="classDataTransferKit_1_1STKMeshEntityImpl_html"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntityImpl.html">DataTransferKit::STKMeshEntityImpl</a></div><div class="ttdoc">Geometric entity implementation definition. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntityImpl_8hpp_source.html#l00064">DTK_STKMeshEntityImpl.hpp:64</a></div></div>
 <div class="ttc" id="DTK__DBC_8hpp_html"><div class="ttname"><a href="DTK__DBC_8hpp.html">DTK_DBC.hpp</a></div><div class="ttdoc">Assertions and Design-by-Contract for error handling. </div></div>
+<div class="ttc" id="classDataTransferKit_1_1STKMeshEntity_html_a051d8250759c218dbf386d9eb7e9838f"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntity.html#a051d8250759c218dbf386d9eb7e9838f">DataTransferKit::STKMeshEntity::STKMeshEntity</a></div><div class="ttdeci">STKMeshEntity(const stk::mesh::Entity &amp;stk_entity, const Teuchos::Ptr&lt; stk::mesh::BulkData &gt; &amp;bulk_data)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntity_8cpp_source.html#l00049">DTK_STKMeshEntity.cpp:49</a></div></div>
+<div class="ttc" id="classDataTransferKit_1_1STKMeshEntity_html_a6394abacbd3340d12415cbef410a1c84"><div class="ttname"><a href="classDataTransferKit_1_1STKMeshEntity.html#a6394abacbd3340d12415cbef410a1c84">DataTransferKit::STKMeshEntity::~STKMeshEntity</a></div><div class="ttdeci">~STKMeshEntity()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="DTK__STKMeshEntity_8cpp_source.html#l00059">DTK_STKMeshEntity.cpp:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 3 2014 13:38:54 for DataTransferKit - Multiphysics Solution Transfer Services by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 3 2014 13:50:53 for DataTransferKit - Multiphysics Solution Transfer Services by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

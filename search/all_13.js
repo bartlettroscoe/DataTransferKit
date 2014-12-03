@@ -43,6 +43,7 @@ var searchData=
   ['_7esplineinterpolationpairing',['~SplineInterpolationPairing',['../classDataTransferKit_1_1SplineInterpolationPairing.html#ac1487b3e23d73fb40161355fa0f6ca4f',1,'DataTransferKit::SplineInterpolationPairing']]],
   ['_7esplineprolongationoperator',['~SplineProlongationOperator',['../classDataTransferKit_1_1SplineProlongationOperator.html#a1a229de1a4a10942551a2dcedffc03a0',1,'DataTransferKit::SplineProlongationOperator']]],
   ['_7estkmeshdofvector',['~STKMeshDOFVector',['../classDataTransferKit_1_1STKMeshDOFVector.html#a65730cac5dabe8eda6633b93aa8193f4',1,'DataTransferKit::STKMeshDOFVector']]],
+  ['_7estkmeshentity',['~STKMeshEntity',['../classDataTransferKit_1_1STKMeshEntity.html#a6394abacbd3340d12415cbef410a1c84',1,'DataTransferKit::STKMeshEntity']]],
   ['_7estkmeshentityimpl',['~STKMeshEntityImpl',['../classDataTransferKit_1_1STKMeshEntityImpl.html#ad9d6302172f22b6a89132642c675562a',1,'DataTransferKit::STKMeshEntityImpl']]],
   ['_7estkmeshentityiterator',['~STKMeshEntityIterator',['../classDataTransferKit_1_1STKMeshEntityIterator.html#a93a4fd4a666b2e45fc542add793d7756',1,'DataTransferKit::STKMeshEntityIterator']]],
   ['_7estkmeshentitylocalmap',['~STKMeshEntityLocalMap',['../classDataTransferKit_1_1STKMeshEntityLocalMap.html#a0de2beef38b395cf84ac671a703ea804',1,'DataTransferKit::STKMeshEntityLocalMap']]],
